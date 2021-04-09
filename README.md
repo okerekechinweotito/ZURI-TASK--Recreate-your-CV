@@ -1,4 +1,4 @@
-# ZURI-TASK--Recreate-your-CV-
+# ZURI-TASK--Recreate-your-CV
 Recreate your PDF CV using HTML/CSS
 - Do not use ready-made template
 
