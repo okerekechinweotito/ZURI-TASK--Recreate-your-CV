@@ -1,0 +1,90 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #2a2a2e;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: minmax(100vh, auto);
+  width: 60%;
+  margin: auto;
+  background-color: #ffffff;
+  color: #2b343d;
+}
+
+h3 {
+  display: inline !important;
+}
+
+.main__column1 {
+  grid-row: span 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.main__column1--picture {
+  width: 9em;
+  height: 9em;
+  border-radius: 50%;
+  background-image: url(./okerekePic.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main__column1__contact {
+  margin-top: 1em;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+}
+.main__column1__contact i {
+  padding: 7px;
+}
+
+.main__column1__skills hr {
+  color: #2b343d;
+  width: 50%;
+  margin-top: -0.5em;
+}
+.main__column1__skills {
+  line-height: 3em;
+  overflow-wrap: break-word;
+  color: #2b343d;
+}
+
+.main__column1__skills--box {
+  width: auto;
+  height: auto;
+  background-color: #2b343d;
+  color: #ffffff;
+  border-radius: 0.5em;
+  padding: 5px;
+}
+
+.main__column2 {
+  grid-column: span 2;
+}
+.main__column2 h3 {
+  display: inline;
+}
+
+.main__column2__about {
+  background-color: #2b343d;
+  color: #ffffff;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+}
